@@ -1,0 +1,252 @@
+:root {
+  --hero-color: #ffffff;
+  --header-color: #212121;
+  --title-color: #212121;
+  --text-color: #757575;
+  --accent-color: #2196f3;
+}
+
+body {
+  font-family: roboto, sans-serif;
+  color: #212121;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/*--------HEADER---------------*/
+
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+.logo-text {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--header-color);
+}
+
+.header-link:hover,
+.header-mail:hover,
+.header-tel:hover {
+  color: var(--accent-color);
+}
+
+.header-link:focus,
+.header-mail:focus,
+.header-tel:focus {
+  color: var(--accent-color);
+}
+
+.header-mail,
+.header-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+/*--------hero---------------*/
+
+.hero {
+  background: #2f303a;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--hero-color);
+}
+
+.hero-btn {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--accent-color);
+}
+
+/*--------benefits---------------*/
+
+.benefits-headline {
+  visibility: hidden;
+}
+
+.benefits-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+.benefits-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+/*--------ABOUT---------------*/
+
+.about-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--header-color);
+}
+
+/*--------TEAM---------------*/
+
+.team-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--header-color);
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--header-color);
+}
+.team-position {
+  font-size: 16px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+/*--------FOOTER---------------*/
+
+.footer-logo-text {
+  color: var(--hero-color);
+}
+
+.footer {
+  background-color: #2f303a;
+}
+
+.fotter-map {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--hero-color);
+}
+
+.fotter-map:hover,
+.fotter-mail:hover,
+.fotter-tel:hover {
+  color: var(--accent-color);
+}
+
+.fotter-map:focus,
+.fotter-mail:focus,
+.fotter-tel:focus {
+  color: var(--accent-color);
+}
+
+.fotter-mail,
+.fotter-tel {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/*---------------PORTFOLIO---------------*/
+
+/*------------------MAIN-----------------*/
+
+.buttons-item {
+  font-family: "Roboto";
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--header-color);
+  background-color: #f5f4fa;
+}
+
+.buttons-item:hover {
+  color: var(--hero-color);
+  background-color: var(--accent-color);
+}
+
+.buttons-item:focus {
+  color: var(--hero-color);
+  background-color: var(--accent-color);
+}
+
+/*-------------exemple-------------*/
+
+.buttons-title {
+  visibility: hidden;
+}
+
+.exemple-title {
+  visibility: hidden;
+}
+
+.exemple-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+
+.exemple-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
