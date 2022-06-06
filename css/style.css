@@ -52,11 +52,25 @@ body {
 
 .header {
   background-color: #ccc;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header-list {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-contacts {
+}
+
+.header-tel {
+  margin-left: 50px;
 }
 
 .logo {
@@ -66,8 +80,10 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
-  padding-top: 24px;
-  padding-bottom: 25px;
+}
+
+.header > .logo {
+  margin-right: 93px;
 }
 
 .logo-text {
@@ -112,7 +128,7 @@ body {
 
 .hero {
   background: #2f303a;
-  padding: 200px 452px 280px;
+  padding: 200px 452px 200px;
 }
 
 .hero-title {
@@ -153,6 +169,10 @@ body {
   visibility: hidden;
 }
 
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .benefits-title {
   font-weight: 700;
   font-size: 14px;
@@ -186,6 +206,10 @@ body {
   margin-bottom: 50px;
 }
 
+.about-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /*--------TEAM---------------*/
 
 .team {
@@ -203,6 +227,10 @@ body {
   margin-bottom: 50px;
 }
 
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-name {
   font-weight: 500;
   font-size: 16px;
@@ -212,6 +240,7 @@ body {
   margin-bottom: 10px;
   margin-top: 30px;
 }
+
 .team-position {
   font-size: 16px;
   line-height: 1.14;
@@ -278,9 +307,17 @@ body {
 
 /*------------------MAIN-----------------*/
 
-.buttons-list {
+.buttons {
   padding-top: 94px;
-  padding-bottom: 34px;
+  padding-bottom: 94px;
+}
+
+.buttons-title {
+  visibility: hidden;
+}
+
+.buttons-list {
+  margin-bottom: 50px;
 }
 
 .buttons-item {
@@ -292,6 +329,10 @@ body {
   letter-spacing: 0.03em;
   color: var(--header-color);
   background-color: #f5f4fa;
+}
+
+.buttons-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .buttons-item:hover {
@@ -306,12 +347,21 @@ body {
 
 /*-------------exemple-------------*/
 
-.buttons-title {
+.exemple-title {
   visibility: hidden;
 }
 
-.exemple-title {
-  visibility: hidden;
+.exemple-list {
+}
+
+.exemple-item {
+  margin: 15px;
+}
+
+.exemple-border {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
 }
 
 .exemple-name {
@@ -320,6 +370,7 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
+  margin-bottom: 4px;
 }
 
 .exemple-text {
@@ -328,4 +379,8 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+
+.footer > .logo {
+  margin-bottom: 20px;
 }
