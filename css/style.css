@@ -51,22 +51,45 @@ body {
 /*--------HEADER---------------*/
 
 .header {
-  background-color: #ccc;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
+}
+
+.header-nav .header-link.current {
+  color: var(--accent-color);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
 }
 
 .header-list {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
 }
 
 .header-item:not(:last-child) {
   margin-right: 50px;
 }
 
+.header-list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .header-contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
 .header-tel {
@@ -80,10 +103,10 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
-}
-
-.header > .logo {
-  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
 }
 
 .logo-text {
@@ -128,10 +151,12 @@ body {
 
 .hero {
   background: #2f303a;
-  padding: 200px 452px 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
+  max-width: 700px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -140,29 +165,51 @@ body {
   text-transform: uppercase;
   color: var(--hero-color);
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-btn {
+  border-radius: 4px;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
+  min-width: 200px;
+  height: 50px;
   line-height: 1.88;
   display: block;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
   margin: 0 auto;
+  padding: 10px 32px;
+  color: var(--hero-color);
+  background-color: var(--accent-color);
+  border-color: transparent;
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  color: var(--accent-color);
+  color: var(--hero-color);
+  background-color: var(--accent-color);
 }
 
 /*--------benefits---------------*/
 
 .benefits {
-  padding: 94px 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.benefits-head {
+}
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.benefits-item {
+  width: 270px;
 }
 
 .benefits-headline {
@@ -194,7 +241,7 @@ body {
 /*--------ABOUT---------------*/
 
 .about {
-  padding: 94px 215px;
+  padding: 94px 94px;
 }
 
 .about-title {
@@ -204,6 +251,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--header-color);
   margin-bottom: 50px;
+  text-align: center;
+}
+
+.about-list {
+  display: flex;
 }
 
 .about-item:not(:last-child) {
@@ -213,7 +265,9 @@ body {
 /*--------TEAM---------------*/
 
 .team {
-  padding: 94px 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #f5f4fa;
 }
 
 .team-title {
@@ -225,10 +279,26 @@ body {
   letter-spacing: 0.03em;
   color: var(--header-color);
   margin-bottom: 50px;
+  text-align: center;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-item {
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--hero-color);
 }
 
 .team-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.team-member {
+  padding: 30px 60px;
 }
 
 .team-name {
@@ -236,14 +306,15 @@ body {
   font-size: 16px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--header-color);
   margin-bottom: 10px;
-  margin-top: 30px;
 }
 
 .team-position {
   font-size: 16px;
   line-height: 1.14;
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
@@ -254,10 +325,6 @@ body {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.logo {
-  margin-bottom: 20px;
 }
 
 .footer-logo-text {
@@ -318,9 +385,15 @@ body {
 
 .buttons-list {
   margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 .buttons-item {
+  padding: 6px 22px;
+  display: inline-block;
+  background: #f5f4fa;
+  border-radius: 4px;
   font-family: "Roboto";
   cursor: pointer;
   font-weight: 500;
@@ -328,19 +401,16 @@ body {
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--header-color);
-  background-color: #f5f4fa;
+  border-color: transparent;
 }
 
-.buttons-item:not(:last-child) {
+.buttons-button:not(:last-child) {
   margin-right: 8px;
 }
 
-.buttons-item:hover {
-  color: var(--hero-color);
-  background-color: var(--accent-color);
-}
-
-.buttons-item:focus {
+.buttons-item:hover,
+.buttons-item:focus,
+.buttons-item:active {
   color: var(--hero-color);
   background-color: var(--accent-color);
 }
@@ -352,6 +422,10 @@ body {
 }
 
 .exemple-list {
+  flex-basis: calc(100% / 3 - 60px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
 .exemple-item {
