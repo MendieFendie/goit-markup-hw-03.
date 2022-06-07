@@ -37,7 +37,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   justify-content: center;
-  outline: 1px solid tomato;
+  /*outline: 1px solid tomato*/
 }
 
 .link {
